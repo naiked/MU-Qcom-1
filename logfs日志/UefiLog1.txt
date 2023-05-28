@@ -1,0 +1,460 @@
+S - Format: Log Type - Time(microsec) - Message - Optional Info
+S - Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00925-WAIPIO-1.22784.4
+S - IMAGE_VARIANT_STRING=SocPalimaLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu135
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x0023e0e1
+S - OEM ID @ 0x221c8700 = 0x00000072
+S - Serial Number @ 0x221c8610 = 0x0000043b85278a26
+S - Feature Config Row 0 @ 0x221c2258 = 0x062da70008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0xbaddbb054ab6c900
+S - Core 0 Frequency, 1324 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 335
+APBL Boot Media Detect Start: 7818
+APBL Boot Media Detect End: 7835
+APBL SHELF Load+Auth Start: 7836
+	APBL ELF MD Load Start: 45453
+	APBL ELF MD Load End: 45675
+	APBL ELF Seg Load Start: 45676
+	APBL ELF Seg Load End: 48540
+		APBL SEQ Valid Set: 48565
+		APBL SEQ SA ACK Rcvd: 58815
+	APBL ELF MD Load Start: 60035
+	APBL ELF MD Load End: 60976
+	APBL ELF Auth Start: 60981
+	APBL ELF Auth End: 78318
+	APBL ELF Seg Load Start: 78318
+	APBL ELF Seg Load End: 81390
+	APBL ELF Seg Verify Start: 81390
+	APBL ELF Seg Verify End: 86341
+	APBL ELF MD Load Start: 87480
+	APBL ELF MD Load End: 88298
+	APBL ELF Auth Start: 88300
+	APBL ELF Auth End: 105631
+	APBL ELF Seg Load Start: 105633
+	APBL ELF Seg Load End: 114161
+	APBL ELF Seg Verify Start: 114163
+	APBL ELF Seg Verify End: 118581
+APBL SHELF Load+Auth End: 118735
+		APBL TME PBL Exit: 118736
+		APBL XBL_SC Exit Check: 119090
+		APBL XBL_SC Exit Ack: 127821
+APBL Exit: 127825
+
+B -    130509 - SBL1, Start
+B -    147925 - SBL1 BUILD @ 21:36:56 on Mar  1 2023
+B -    153262 - usb: eud_ser_upd , 0x85278a26
+D -      1037 - sbl1_hw_init
+D -       458 - media_init:1
+D -         0 - blacklist disable
+B -    153842 - OEM_MISC -  Image Load, Start
+D -       183 - OEM_MISC -  Image Loaded, Delta - (0 Bytes)
+B -    154025 - QTI_MISC -  Image Load, Start
+D -      9516 - Auth Metadata
+D -     11712 - QTI_MISC -  Image Loaded, Delta - (4624 Bytes)
+B -    165737 - APDP -  Image Load, Start
+D -     11590 - Auth Metadata
+D -     18666 - APDP -  Image Loaded, Delta - (4036 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    187544 - Debug Policy: processed
+B -    187544 - Debug Policy: debug policy applied
+D -      3141 - DP_Milestone
+D -     12566 - Auth Metadata
+D -     14213 - sbl1_xblconfig_init
+B -    201788 - XBL Config -  Image Load, Start
+B -    201788 - DTB: looking for default S_DTB_NAME
+B -    203221 - DTB: published DEFAULT_BLOB_ID
+D -      1464 - boot_pre_ddr_dtb_init
+B -    212585 - PM: Tofino Chip Detected
+B -    212585 - PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0
+B -    214415 - PM: Reset by PSHOLD
+B -    214415 - PM: Reset Type: Hard Reset
+B -    249856 - PM: SET_VAL:Skip
+B -    250100 - PM: PSI: b0x00_v0x29
+B -    254217 - PM: Device Init # SPMI Transn: 3133
+D -     50996 - pm_device_init, Delta
+B -    254248 - pm_driver_init, Start
+B -    304115 - PM: Driver Init # SPMI Transn: 868
+D -     49867 - pm_driver_init, Delta
+D -    100863 - sbl1_pmic_init
+D -     29707 - media_init:2
+B -    340746 - UFS Spec Version: 3.10
+B -    343552 - UFS INQUIRY ID: SKhynix HN8T25DEHKX077  A003
+B -    345351 - UFS Boot LUN: 1
+B -    347883 - UFS Total Size: 512 GB
+B -    363011 - UFS Speed: Gear 4 Lane 2 Rate B
+D -     35929 - media_init:3
+D -        92 - boot_wdog_disable_check
+D -       671 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    370514 - SHRM -  Image Load, Start
+D -     21380 - Auth Metadata
+D -     25681 - SHRM -  Image Loaded, Delta - (51792 Bytes)
+B -    396347 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    396347 - CDT -  Image Load, Start
+B -    396347 - CDT not found in any storage media
+D -      1495 - sbl1_hw_platform_pre_ddr
+B -    397842 - PM: Charging applicable is true
+B -    399153 - usb: ldr , 0x2d2
+B -    399153 - usb: qusb_dci_eud_init
+B -    400282 - PM: Battery ID: 103456Ohm
+B -    401197 - PM: Vbat:4360mV
+B -    402203 - PM: VBAT: 4360mV IBAT: 245mA
+B -    402264 - PM: CHG Init # SPMI Transn: 4084
+B -    402264 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     16104 - sbl1_hw_pre_ddr_init
+B -    414037 - V-/V+/P:100
+D -       122 - boot_fedl_check
+D -         0 - boot_dload_handle_forced_dload_timeout
+D -       366 - sbl1_load_ddr_training_data
+B -    414434 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -       396 - sbl1_ddr_set_params
+B -    414464 - sbl1_ddr_init, Start
+B -    414647 - LP5 DDR detected
+B -    416447 - DDR_INIT with shrm.elf
+B -    416477 - INFO: PXI based read & write training enabled
+
+B -    426359 - eCDT MRR - Data Starting Address: 0x19056D00
+
+B -    427305 - ddr_init = 1 cold boot
+D -     12871 - sbl1_ddr_init, Delta
+B -    427335 - DSF version = 272.56.150
+B -    427335 - Manufacturer ID = 0x6, Device Type = 0x8
+B -    427366 - Rank 0 size = 6144 MB, Rank 1 size = 6144 MB
+D -     13115 - sbl1_ddr_init
+D -       214 - store-logstomedia
+B -    427854 - do_ddr_training, Start
+B -    442646 - DDR: Start of DDR Training Restore
+B -    447008 - Current DDR Freq = 2096 MHz
+B -    447008 - Max enabled DDR Freq = 3196 MHz
+B -    447008 - DDR: End of DDR Training Restore
+D -     19215 - do_ddr_training, Delta
+B -    450393 - IOCTL LCP enabled feature set = 0x0 
+D -     22600 - xbl_trng_ddi_seq
+D -       214 - store-logstomedia
+D -      1342 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2958 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        31 - boot_populate_ddr_details_shared_table
+D -        61 - boot_update_ram_partition_table
+B -    455121 - Pimem init cmd, entry
+D -      6832 - Pimem init cmd, exit
+B -    462868 - External heap init, Start
+B -    462868 - External heap init, End
+D -     17964 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    473085 - DDR -  Image Load, Start
+B -    473116 - Find DTB for chipinfo:[82024f01000000] and platforminfo:[800010000000000]
+B -    473116 - DTB: looking for default D_DTB_NAME
+B -    475434 - DTB: published DEFAULT_BLOB_ID
+D -      2349 - boot_platform_dtb_init
+B -    475525 - usb: UFS Serial - 2a7e2617
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    475586 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -        31 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -         0 - boot_smem_alloc_for_minidump
+D -        30 - boot_shrm_mini_dump_init
+D -        31 - boot_minidump_register_regions
+D -        30 - boot_smem_store_pon_status
+D -         0 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -       152 - sbl1_tlmm_init
+D -        31 - sbl1_efs_handle_cookies
+B -    489830 - PM: PM Total Mem Allocated: 8758 
+D -     13908 - sbl1_pm_aop_pre_init_wrapper
+B -    489830 - AOP Config -  Image Load, Start
+D -     11865 - Auth Metadata
+D -     15799 - AOP Config -  Image Loaded, Delta - (12682 Bytes)
+B -    505659 - AOP -  Image Load, Start
+D -     21503 - Auth Metadata
+D -     36539 - AOP -  Image Loaded, Delta - (233316 Bytes)
+D -         0 - aop_loaded
+D -         0 - boot_prepare_cpucp
+B -    542229 - CPUCPFW -  Image Load, Start
+D -     21563 - Auth Metadata
+D -     50569 - CPUCPFW -  Image Loaded, Delta - (142394 Bytes)
+D -         0 - boot_reset_cpucp
+B -    592828 - QSEE Dev Config -  Image Load, Start
+D -     12383 - Auth Metadata
+D -     16592 - QSEE Dev Config -  Image Loaded, Delta - (50016 Bytes)
+B -    609420 - QSEE -  Image Load, Start
+D -     22387 - Auth Metadata
+D -    134780 - QSEE -  Image Loaded, Delta - (3732823 Bytes)
+D -         0 - sbl1_save_qsee_image_info
+D -       610 - sbl1_hw_play_vibr
+B -    744810 - SEC -  Image Load, Start
+D -     11804 - Auth Metadata
+D -     14091 - SEC -  Image Loaded, Delta - (4396 Bytes)
+B -    758931 - QHEE -  Image Load, Start
+D -     22204 - Auth Metadata
+D -     41389 - QHEE -  Image Loaded, Delta - (1196720 Bytes)
+B -    800350 - APPSBL -  Image Load, Start
+D -     11773 - Auth Metadata
+D -     39040 - APPSBL -  Image Loaded, Delta - (2756472 Bytes)
+D -         0 - sbl1_save_appsbl_index
+B -    840214 - SBL1, End
+D -    709705 - SBL1, Delta
+S - Flash Throughput, 198237 KB/s  (8325971 Bytes,  42879 us)
+S - DDR Frequency, 3196 MHz
+
+
+UEFI Start     [ 1339]
+ - 0x0A7001000 [ 1342] Sec.efi
+ASLR          : ON
+DEP           : ON (RTB)
+Timer Delta   : +3 mS
+RAM Installed : 12288 MB (0x0300000000)
+RAM Entry 0   : Base 0x0080000000  Size 0x006A000000
+RAM Entry 1   : Base 0x00F4600000  Size 0x000BA00000
+RAM Entry 2   : Base 0x0800000000  Size 0x0039900000
+RAM Entry 3   : Base 0x0900000000  Size 0x0180000000
+RAM Entry 4   : Base 0x0840000000  Size 0x00C0000000
+RAM Entry 5   : Base 0x0839F00000  Size 0x0001E00000
+RAM Available : 12049 MB (0x02F1100000)
+Minidump      : ON
+Init 1 aux cores of 7
+Init CPU core 1
+Continue booting UEFI on Core 0
+  > Scheduler up on Core 1
+UEFI Ver      : 6.0.230421.BOOT.MXF.2.0-00925-WAIPIO-1.22784.4
+Build Info    : 64b Apr 21 2023 11:00:00
+Boot Device   : UFS
+PROD Mode     : TRUE
+Retail        : TRUE
+PM: Battery ID: 103492Ohm
+PM: Vbat:4363mV
+PM: VBAT: 4364mV IBAT: 248mA
+PM: dump 0x2950=0x2, 0x2951=0x0, 0x2952=0x1e, 0x2946=0x38
+ Backup GPT CRC does not match with Primary GPT CRC. 
+ Restore backup partition table by the primary
+ Restore backup partition table success
+HW Wdog Setting from PCD : Disabled
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+DisplayFeatureEnablerExecute FeatureEnablerSendCommandTAs failed: eStatus=0, rsp.status=11
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_INIT
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+ADC done - mv: 1628979, percent: 56936
+ADC done - mv: 1862997, percent: 65115
+Chiptype: 591, projectid adc within range 55047 to 58857, hwid adc within range 62803 to 66553
+ProjectType:15 ProductName:marble HwLevel:MP HwCountry:CN HwVersion:15.9.0 HwId:0x90000
+LookUpPanel - idx[9] = M16t_36_02_0a_amoled_dsc_vid
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPLATFORMINFO
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELDTINFO
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELDTINFO
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_POWERUP
+DisplayDxe: Panel_M16T_PowerUp defualt enter!
+DispalyDxe: id1: 0, id2: 1, GetPanelId: lcd id = 0x4
+DisplayDxe: Panel_M16T_PowerUp enter!
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELCONFIG
+DispalyDxe: id1: 0, id2: 1, GetPanelId: lcd id = 0x4
+M16T detect panel:M16t_36_02_0a_amoled_dsc_vid (panel hw id=0x4)
+LookUpPanel - idx[9] = M16t_36_02_0a_amoled_dsc_vid
+Get the panel xml configurations, panelName = M16t_36_02_0a_amoled_dsc_vid!
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPLATFORMINFO
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELDTINFO
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_POWERUP
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELDTINFO
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SETGPIOSTATE
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SETGPIOSTATE
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_RESETPANEL
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPLATFORMINFO
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELDTINFO
+SPSSDxe:: SPSSDxe_BuildLoadCfg , Don't load spss. QC_SP_DISABLE = 0x1 , SPU_ENABLEMENT_OPTION = 0x0. 
+QcomChargerDxe:: ChargerPlatform_Init Enabled WDOG.
+UsbConfigLibOpenProtocols: PMI version (0x32)
+platform: : 80000
+usb_shared_i2c_write, not open 0x%x: : 0
+usb_repeater_init: 0
+usb_repeater_init, tuning_allowed: 1
+read reg|data: : 60064
+read reg|data: : 70034
+read reg|data: : 80099
+UsbConfigLibOpenProtocols: PMI version (0x32)
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 103174 
+ButtonsDxeTest: Keypress SDAM data payload 4 
+Display_Utils_RenderSplashScreen: uLogoIndex = 0
+DeCompressLogoData: Setvariable Logo Image returned eStatus:Success, LogoMagic: LG!!4, 
+DeCompressLogoData: LogoCompressedBlockNum:52 LogoCompressedBytesNum:211727 
+DeCompressLogoData: DecompressBufferSize:77760558  ScratchSize:131072
+Display_Utils_RenderSplashScreen: load imagefv name is: lg.mDisplayUtils: Display_Utils_RenderBGRTImage  MBP-> GOP format.
+Display_Utils_RenderSplashScreen: OEM Logo Successfully Loaded
+[Palima] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SETBACKLIGHT
+Backlight dcs bit width is [12]; brightness percentage is 15%
+DCS command for backlight control is {0x51, 0x02, 0x66} 
+DSIPanelReadWpCoordinate: panel = M16t_36_02_0a_amoled_dsc_vid
+Wp_info Read Status=[0] readSize=[8]
+Read White Color Coordinate: 04 01 09 0B 00 05 00 04 
+DispalyDxe: Set boot service variable <DisplayOledPanelWp> = androidboot.oled_wp=0401090b00050004,eDisplayId=0
+INFO: UEFI NV tables are enabled as VOLATILE!
+UEFI Ver           : 6.0.230421.BOOT.MXF.2.0-00925-WAIPIO-1.22784.4
+Platform           : MTP
+Subtype            : 0
+Boot Device        : UFS
+Chip Name          : SM_TOFINO
+Chip Ver           : 1.0
+-----------------------------
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLibTarget_GetBatteryStatus use PmicFgProtocol 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLibTarget_GetBatteryStatus use PmicFgProtocol 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLibTarget_GetBatteryVoltageStatus Vbat=4360mV, Ichg=358mA 
+ChargerLib::ChargerLib_GetErrors ERROR Charging source not detected 
+ChargerLib:: ChargerLib_GetErrors pChargingError = 11 
+ChargerLib:: ChargerLibTarget_GetBatteryStatus use PmicFgProtocol 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+smem_get_addr: SMEM get addr failed! smem_type=81ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 103174 
+QcomChargerDxe:: ChargerPlatform_SaveChargeInfoToSmem offmode 0
+UEFI Total : 1180 ms
+POST Time      [ 2519] OS Loader
+Loader Build Info: Apr 26 2023 09:55:47
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+VB: RWDeviceState: Succeed using rpmb!
+Total DDR Size: 0x00000002F1100000 
+ PON Reason is 1 cold_boot:1
+Total DDR Size: 0x00000002F1100000 
+project: 0xF, hw_id: 0x90000
+check_vibrate_condition entered!
+getting IsColdBoot reset status: 1,key: 0,key: 0
+EFI_PROJECTINFO_TYPE_M16T = M16T!
+HAPTICS Start
+HAPTICS Protocol Loacte: 0
+HAPTICS Protocol SetActuatorType: 0
+HAPTICS Protocol SetLraResonanceType: 0
+HAPTICS Protocol SetVmaxVolt: 0
+HAPTICS Protocol Enable: 0
+HAPTICS Protocol Play: 0
+HAPTICS Protocol Play: 0
+HAPTICS Protocol Enable: 0
+HAPTICS End
+MpDevice!!
+KeyPress:2, BootReason:32
+Fastboot=1, Recovery:0
+Launching fastboot
+Fastboot Build Info: Apr 26 2023 09:53:33
+usb_shared_repeater_reset: 0
+usb_shared_repeater_reset: 0
+ssusb_phy_init_success lane: 0
+Fastboot: Initializing...
+Memory Dumping is allowed
+Results[0]: 1
+Results[1]: 0
+Results[2]: 0
+Results[3]: 3221225707
+ChargerLib:: ChargerLibTarget_GetBatteryStatus use PmicFgProtocol 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+Token Length: 128
+Fastboot: Processing commands
+Display_Utils_ShowCustLogo enter PictureIndex is 2  
+Picture 2 Successfully load
+DisplayUtils: Display_Utils_RenderBGRTImage  MBP-> GOP format.
+Picture 2 Successfully render
+ConnectSts : Attach, Data Role : UFP (DEVICE Mode), Lane : CC1, CoreNum : 0
+usb_shared_repeater_reset: 0
+usb_shared_repeater_reset: 0
+ssusb_phy_init_success lane: 0
+Dev_Common_Speed: Dev Bus Speed: High, state 2
+Dev_Common_Speed: Dev Bus Speed: High, state 2
+Handling Cmd: download:00617800
+Download Finished
+Handling Cmd: boot
+Loading Image Start : 36944 ms
+Loading Image Done : 36945 ms
+Total Image Read size : 4096 Bytes
+Booting from slot (_a)
+Booting Into Mission Mode
+Load Image vbmeta_a total time: 1 ms 
+Load Image recovery_a total time: 1 ms 
+Load Image recovery_a total time: 1 ms 
+Load Image vbmeta_system_a total time: 0 ms 
+Load Image dtbo_a total time: 14 ms 
+Load Image vendor_boot_a total time: 49 ms 
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+VB2: Authenticate complete! boot state is: orange
+VB2: boot state: orange(1)
+Display_Utils_ShowCustLogo enter PictureIndex is 1  
+Display_Utils_ShowCustLogo: unlock_PictureIndex = 1, displayId = 0  
+Picture 1 Successfully load
+DisplayUtils: Display_Utils_RenderBGRTImage  MBP-> GOP format.
+Picture 1 Successfully render
+Failed to add memory space :0x804EB000 0x1000
+Hyp version: 1
+Memory Base Address: 0x80000000
+ConnectSts : Detach, Data Role : UNKNOWN, Lane : OPEN, CoreNum : 0
+Decompressing kernel image total time: 1109 ms
+Apply Overlay total time: 4780 ms 
+tz_armv8_smc_call failed, TzStatus = 0x80000001,  SmcId = 0x2001901  
+ScmSipSysCall() failed, Status = (0x7)
+uart_switch: NOT_SET
+Memory Dumping is allowed
+Results[0]: 1
+Results[1]: 0
+Results[2]: 0
+Results[3]: 3221225707
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 103174 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 103174 
+HardwareVersion: 15
+OledPanelWpCmdLine=  androidboot.oled_wp=0401090b00050004
+Unable to get SecOledPanelId Config, Not Found
+Unable to get DisplayCellId Config, Not Found
+Unable to get MsmDrmSecOledPanelId Config, Not Found
+Offlining Memory Not Supported
+pureason = 40001
+pdreason = 2
+initrd size 262145 B
+Cmdline:  androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=41cd46be-2157-d33f-df3e-a0a816a504b0 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 a
+BootConfig: 
+
+RAM Partitions
+Add Base: 0x0000000080000000 Available Length: 0x000000006A000000 
+Add Base: 0x00000000F4600000 Available Length: 0x000000000BA00000 
+Add Base: 0x0000000800000000 Available Length: 0x0000000039900000 
+Add Base: 0x0000000900000000 Available Length: 0x0000000180000000 
+Add Base: 0x0000000840000000 Available Length: 0x00000000C0000000 
+Add Base: 0x0000000839F00000 Available Length: 0x0000000001E00000 
+Loading Image Start : 43172 ms
+Loading Image Done : 43173 ms
+Total Image Read size : 4096 Bytes
+E-BUFF:Error adding ebuff: -2
+Variable not exist, skip update pll codes
+PartialGoods Value: 0x0
+Update Device Tree total time: 17 ms 
+
+Shutting Down UEFI Boot Services: 43187 ms
+Start EBS        [43187] 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

@@ -1,0 +1,1 @@
+bash build_uefi.sh -d note12 -r DEBUG  -m 12

@@ -1,0 +1,30 @@
+Binary file ./Platforms/Binaries/gts8/QcomPkg/Drivers/EnvDxe/EnvDxe.efi matches
+./Platforms/Binaries/gts8/RawFiles/uefiplat.cfg:21:0xA7600000, 0x00001000, "CPU Vectors",       AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK
+Binary file ./Platforms/Binaries/note12/QcomPkg/Drivers/EnvDxe/EnvDxe.efi matches
+Binary file ./Platforms/Binaries/note12/QcomPkg/Drivers原/EnvDxe/EnvDxe.efi matches
+./Platforms/Binaries/note12/RawFiles/uefiplat.cfg:23:0xA7600000, 0x00001000, "CPU Vectors",       AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK
+./Platforms/Binaries/note12/RawFiles/uefiplat.cfg.bak:21:0xA7600000, 0x00001000, "CPU Vectors",       AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK
+./Platforms/SM8450Pkg/Devices/gts8/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.c:31:    {"CPU Vectors",       0xA7600000, 0x00001000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK},
+./Platforms/SM8450Pkg/Devices/gts8/gts8.dsc.inc:28:  gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0xA7600000
+./Platforms/SM7475Pkg/Devices/gts8/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.c:31:    {"CPU Vectors",       0xA7600000, 0x00001000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK},
+./Platforms/SM7475Pkg/Devices/gts8/gts8.dsc.inc:28:  gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0xA7600000
+./Platforms/SM7475Pkg/Devices/note12/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.c:20:    {"CPU Vectors",       0xA7600000, 0x00001000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK},
+./Platforms/SM7475Pkg/Devices/note12/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.cyuan:31:    {"CPU Vectors",       0xA7600000, 0x00001000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK},
+./Platforms/SM7475Pkg/Devices/note12/note12.dsc.inc:28:  gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0xA7600000
+../edk2-msm/Platform/Qualcomm/sm8550/sm8550.dsc:29:  gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0xA7600000     # CPU Vectors
+Binary file ../MU-Qcom/Platforms/Binaries/gts8/QcomPkg/Drivers/EnvDxe/EnvDxe.efi matches
+../MU-Qcom/Platforms/Binaries/gts8/RawFiles/uefiplat.cfg:21:0xA7600000, 0x00001000, "CPU Vectors",       AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK
+Binary file ../MU-Qcom/Platforms/Binaries/note12/QcomPkg/Drivers/EnvDxe/EnvDxe.efi matches
+Binary file ../MU-Qcom/Platforms/Binaries/note12/QcomPkg/Drivers原/EnvDxe/EnvDxe.efi matches
+../MU-Qcom/Platforms/Binaries/note12/RawFiles/uefiplat.cfg:23:0xA7600000, 0x00001000, "CPU Vectors",       AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK
+../MU-Qcom/Platforms/Binaries/note12/RawFiles/uefiplat.cfg.bak:21:0xA7600000, 0x00001000, "CPU Vectors",       AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK
+../MU-Qcom/Platforms/SM8450Pkg/Devices/gts8/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.c:31:    {"CPU Vectors",       0xA7600000, 0x00001000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK},
+../MU-Qcom/Platforms/SM8450Pkg/Devices/gts8/gts8.dsc.inc:28:  gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0xA7600000
+../MU-Qcom/Platforms/SM7475Pkg/Devices/gts8/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.c:31:    {"CPU Vectors",       0xA7600000, 0x00001000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK},
+../MU-Qcom/Platforms/SM7475Pkg/Devices/gts8/gts8.dsc.inc:28:  gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0xA7600000
+../MU-Qcom/Platforms/SM7475Pkg/Devices/note12/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.c:20:    {"CPU Vectors",       0xA7600000, 0x00001000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK},
+../MU-Qcom/Platforms/SM7475Pkg/Devices/note12/Library/PlatformMemoryMapLib/PlatformMemoryMapLib.cyuan:31:    {"CPU Vectors",       0xA7600000, 0x00001000, AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK},
+../MU-Qcom/Platforms/SM7475Pkg/Devices/note12/note12.dsc.inc:28:  gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0xA7600000
+../note20.txt:26:0xA7600000, 0x00001000, "CPU Vectors",       AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK
+Binary file ../uefi.elf matches
+Binary file ../note20-uefi/EnvDxe.efi matches
